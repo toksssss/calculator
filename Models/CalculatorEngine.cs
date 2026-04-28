@@ -1,6 +1,6 @@
 using System;
 
-namespace SimpleCalculatorFactory
+namespace SimpleCalculatorMVVM.Models
 {
     public class CalculatorEngine
     {

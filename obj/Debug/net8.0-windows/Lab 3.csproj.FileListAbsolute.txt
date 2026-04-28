@@ -1,0 +1,43 @@
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\bin\Debug\net8.0-windows\Lab 3.exe
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\bin\Debug\net8.0-windows\Lab 3.deps.json
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\bin\Debug\net8.0-windows\Lab 3.runtimeconfig.json
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\bin\Debug\net8.0-windows\Lab 3.dll
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\bin\Debug\net8.0-windows\Lab 3.pdb
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3_MarkupCompile.cache
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3_MarkupCompile.lref
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.g.resources
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.AssemblyInfoInputs.cache
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.AssemblyInfo.cs
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.csproj.CoreCompileInputs.cache
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.dll
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\refint\Lab 3.dll
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.pdb
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\Lab 3.genruntimeconfig.cache
+C:\Users\ivanv\source\repos\Lab 3\Lab 3\obj\Debug\net8.0-windows\ref\Lab 3.dll
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\bin\Debug\net8.0-windows\Lab 3.exe
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\bin\Debug\net8.0-windows\Lab 3.deps.json
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\bin\Debug\net8.0-windows\Lab 3.runtimeconfig.json
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\bin\Debug\net8.0-windows\Lab 3.dll
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\bin\Debug\net8.0-windows\Lab 3.pdb
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3_MarkupCompile.cache
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3_MarkupCompile.lref
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.g.resources
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.AssemblyInfo.cs
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.sourcelink.json
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.dll
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\refint\Lab 3.dll
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.pdb
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\Lab 3.genruntimeconfig.cache
+C:\Users\User\Desktop\КПО\Лабы\Labs\MVVM\obj\Debug\net8.0-windows\ref\Lab 3.dll
