@@ -1,109 +1,56 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using SimpleCalculatorMVVM.ViewModels;
 
-namespace SimpleCalculator
+namespace SimpleCalculatorMVVM
 {
     public partial class MainWindow : Window
     {
-        private readonly CalculatorEngine _engine;
-        private double _lastNumber;
-        private string _currentOperation;
-        private bool _isNewEntry;
-
         public MainWindow()
         {
             InitializeComponent();
-            _engine = new CalculatorEngine();
-            _isNewEntry = true;
+            var viewModel = new MainViewModel();
+            DataContext = viewModel;
+
+            CreateButtons(viewModel);
         }
 
-        // Ввод цифр
-        private void Digit_Click(object sender, RoutedEventArgs e)
+        private void CreateButtons(MainViewModel vm)
         {
-            var button = (Button)sender;
-            string digit = button.Content.ToString();
-
-            if (DisplayTextBox.Text == "0" || _isNewEntry)
+            // Массив кнопок: Текст, Команда, Параметр команды
+            var buttonDefs = new (string Content, string CommandName, object Parameter)[]
             {
-                DisplayTextBox.Text = digit;
-                _isNewEntry = false;
-            }
-            else
-            {
-                DisplayTextBox.Text += digit;
-            }
-        }
+                ("C", "ClearCommand", "C"), ("CE", "ClearCommand", "CE"), ("Undo", "UndoCommand", null), ("/", "OperationCommand", "/"),
+                ("7", "DigitCommand", "7"), ("8", "DigitCommand", "8"), ("9", "DigitCommand", "9"), ("*", "OperationCommand", "*"),
+                ("4", "DigitCommand", "4"), ("5", "DigitCommand", "5"), ("6", "DigitCommand", "6"), ("-", "OperationCommand", "-"),
+                ("1", "DigitCommand", "1"), ("2", "DigitCommand", "2"), ("3", "DigitCommand", "3"), ("+", "OperationCommand", "+"),
+                ("±", null, null), ("0", "DigitCommand", "0"), (",", "DigitCommand", ","), ("=", "EqualsCommand", null)
+            };
 
-        // Ввод десятичной запятой
-        private void Decimal_Click(object sender, RoutedEventArgs e)
-        {
-            if (_isNewEntry)
+            foreach (var def in buttonDefs)
             {
-                DisplayTextBox.Text = "0,";
-                _isNewEntry = false;
-            }
-            else if (!DisplayTextBox.Text.Contains(","))
-            {
-                DisplayTextBox.Text += ",";
-            }
-        }
-
-        // Выбор арифметической операции
-        private void Operation_Click(object sender, RoutedEventArgs e)
-        {
-            var button = (Button)sender;
-
-            if (!_isNewEntry && !string.IsNullOrEmpty(_currentOperation))
-            {
-                Equals_Click(this, null);
-            }
-
-            _currentOperation = button.Content.ToString();
-            if (double.TryParse(DisplayTextBox.Text, out _lastNumber))
-            {
-                _isNewEntry = true;
-            }
-        }
-
-        // Нажатие кнопки "="
-        private void Equals_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(_currentOperation)) return;
-
-            if (double.TryParse(DisplayTextBox.Text, out double currentNumber))
-            {
-                try
+                Button btn = new Button
                 {
-                    double result = _engine.Calculate(_lastNumber, currentNumber, _currentOperation);
-                    DisplayTextBox.Text = result.ToString();
-                    _lastNumber = result;
-                    _isNewEntry = true;
-                    _currentOperation = string.Empty;
-                }
-                catch (DivideByZeroException ex)
+                    Content = def.Content,
+                    Margin = new Thickness(2),
+                    FontSize = 18
+                };
+
+                // Настраиваем привязку команды, если она указана
+                if (def.CommandName != null)
                 {
-                    DisplayTextBox.Text = "Ошибка";
-                    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                    _isNewEntry = true;
+                    Binding cmdBinding = new Binding(def.CommandName);
+                    btn.SetBinding(Button.CommandProperty, cmdBinding);
+
+                    if (def.Parameter != null)
+                    {
+                        btn.CommandParameter = def.Parameter;
+                    }
                 }
+
+                ButtonsContainer.Children.Add(btn);
             }
-        }
-
-        // Полный сброс всех данных (С)
-        private void Clear_Click(object sender, RoutedEventArgs e)
-        {
-            DisplayTextBox.Text = "0";
-            _lastNumber = 0;
-            _currentOperation = string.Empty;
-            _isNewEntry = true;
-        }
-
-        // Очистка только текущего вводимого числа (CE)
-        private void ClearEntry_Click(object sender, RoutedEventArgs e)
-        {
-            DisplayTextBox.Text = "0";
-            _isNewEntry = true;
         }
     }
 }
